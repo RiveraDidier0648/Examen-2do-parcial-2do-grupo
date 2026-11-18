@@ -41,7 +41,7 @@ if (isset($_POST['accion']) && $_POST['accion'] == 'login') {
         if (password_verify($password, $usuario['password'])) {
             $_SESSION['usuario_id'] = $usuario['id'];
             $_SESSION['usuario_nombre'] = $usuario['nombre'];
-            header("Location: tienda.php"); // Redirigir a la tienda
+            header("Location: tienda.php");
             exit();
         } else {
             $mensaje = "<p class='error'> Contraseña incorrecta.</p>";
@@ -58,7 +58,7 @@ $conn->close();
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenido a Mi Tienda</title>
+    <title>Bienvenido a mi tienda de bebidas</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #eef2f7; margin: 0; padding: 40px; text-align: center; }
         .bienvenida { max-width: 700px; margin: 0 auto 30px auto; }
@@ -80,7 +80,7 @@ $conn->close();
 <body>
 
     <div class="bienvenida">
-        <h1> ¡Bienvenido a Nuestra Tienda Online!</h1>
+        <h1> ¡Bienvenido a Nuestra Tienda de bebidas!</h1>
         <p>Inicia sesión con tu cuenta o regístrate gratis para ver el catálogo y realizar tus compras.</p>
     </div>
 
