@@ -63,6 +63,8 @@ $resultado = $conn->query("SELECT * FROM productos");
         <?php endwhile; ?>
     </div>
 
+<fotter>  Victor Didier Rivera Sánchez     5ºI    0648    Programación </fotter>
+    
 </body>
 </html>
 <?php $conn->close(); ?>
